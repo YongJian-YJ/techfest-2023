@@ -458,6 +458,7 @@ button {
     background-color: #000;
     height: auto;
     padding: 20px 10px 13px 10px;
+
 }
 
 .buy_bt {
@@ -479,6 +480,7 @@ button {
     text-transform: uppercase;
     margin-right: 5px;
     border-radius: 40px;
+
 }
 
 .buy_bt li a:hover {
