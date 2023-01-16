@@ -3,3 +3,5 @@
 __pycache__/
 TechFest/__pycache__/
 core/__pycache__/
+.idea/
+**/.idea/
