@@ -16,6 +16,7 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
+       <link rel="stylesheet" href="{% static 'css/searchbar.css' %}">
       <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
       <!-- style css -->
       <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
@@ -32,6 +33,7 @@
       <!-- owl stylesheets --> 
       <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
       <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+       <link rel="stylesheet" href="{% static 'css/banner.css' %}">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
    </head>
@@ -54,7 +56,6 @@
                   <div class="login_text">
                      <ul>
                         <li><a href="#"><img src="{% static 'images/user-icon.png' %}"></a></li>
-                        <li><a href="#"><img src="{% static 'images/bag-icon.png' %}"></a></li>
                         <li><a href="#"><img src="{% static 'images/search-icon.png' %}"></a></li>
                      </ul>
                   </div>
@@ -71,12 +72,12 @@
                   <div class="container">
                      <div class="row">
                         <div class="col-sm-6">
-                           <h1 class="banner_taital">Beauty <br>Kit</h1>
-                           <p class="banner_text">Ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                           <div class="read_bt"><a href="http://127.0.0.1:8000/profile">Buy Now</a></div>
+                           <h1 class="banner_taital">Nervous? <br>Desperate?</h1>
+                           <p class="banner_text">Find a mentor and talk with them to seek for career help.</p>
+                           <div class="read_bt"><a href="http://127.0.0.1:8000/profile">Explore</a></div>
                         </div>
                         <div class="col-sm-6">
-                           <div class="banner_img"><img src="{% static 'images/banner-img.png' %}"></div>
+                           <div class="banner_img_edit"><img src="{% static 'images/mentorship-banner.png' %}"></div>
                         </div>
                      </div>
                   </div>
@@ -131,79 +132,95 @@
 
      
      
-
+      <div class="search_container">
+          <h3 class="product_header">Find the mentorship programme that interests you!</h3>
+        <div class = "mid_container">
+              <div class = "searchName">
+                <input type="text" class="search form-control" placeholder="What you are looking for?">
+              </div>
+              <div class = "searchName">
+                <input type="text" class="search form-control" placeholder="Location?">
+              </div>
+              <div class = "searchName">
+                <input type="text" class="search form-control" placeholder="In which industry?">
+              </div>
+              <div class = "searchName">
+                <button class="button-13" role="button">Search</button>
+              </div>
+        </div>
+      </div>
       <!-- product section start -->
       <div class="product_section layout_padding">
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
-                  <h1 class="product_taital">Our Products</h1>
-                  <p class="product_text">incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                  <h1 class="product_taital">Our Mentorship Programme</h1>
+                  <p class="product_text">Thousands of industry experts here are willing to lend a hand to you. Whenever you need their help.</p>
                </div>
             </div>
             <div class="product_section_2 layout_padding">
                <div class="row">
                   <div class="col-lg-3 col-sm-6">
                      <div class="product_box">
-                        <h4 class="bursh_text">Beauty Bursh</h4>    
-                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                        <img src="{% static 'images/img-1.png' %}" class="image_1">
+                        <h4 class="bursh_text">Learning with Jessica</h4>
+                        <p class="lorem_text">Jessica has a 10-year experience in software development. She is now accepting up to 5...</p>
+                        <img src="{% static 'images/mentor-program-1.jpg' %}" class="image_1">
                         <div class="btn_main">
                            <div class="buy_bt">
                               <ul>
-                                 <li class="active"><a href="#">Buy Now</a></li>
-                                 <li><a href="#">Buy Now</a></li>
+                                 <li class="active"><a href="#">Check Details</a></li>
+                                 <li><a href="#">Book Now</a></li>
                               </ul>
                            </div>
-                           <h3 class="price_text">Price $30</h3>
+                           
                         </div>
                      </div>
                   </div>
                   <div class="col-lg-3 col-sm-6">
                      <div class="product_box">  
-                        <h4 class="bursh_text">Beauty Bursh</h4>
-                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                        <img src="{% static 'images/img-2.png' %}" class="image_1">
+                        <h4 class="bursh_text">Sharing Session - Internship</h4>
+                        <p class="lorem_text">Are you looking for tech jobs in FAANG, MNC or government sector? </p>
+                        <img src="{% static 'images/mentor-program-2.jpg' %}" class="image_1">
                         <div class="btn_main">
                            <div class="buy_bt">
                               <ul>
-                                 <li class="active"><a href="#">Buy Now</a></li>
-                                 <li><a href="#">Buy Now</a></li>
+                                 <li class="active"><a href="#">Check Details</a></li>
+                                 <li><a href="#">Book Now</a></li>
                               </ul>
                            </div>
-                           <h3 class="price_text">Price $30</h3>
+                           
                         </div>
                      </div>
                   </div>
                   <div class="col-lg-3 col-sm-6">
                      <div class="product_box">
-                        <h4 class="bursh_text">Beauty Bursh</h4>
-                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                        <img src="{% static 'images/img-3.png' %}" class="image_1">
-                        <div class="btn_main">  
+                        <h4 class="bursh_text">Expert Talk - CyberSecurity</h4>
+                        <p class="lorem_text">Experts from Google, Facebook and more are here to share... </p>
+                        <img src="{% static 'images/mentor-program-3.jpg' %}" class="image_1">
+                        <divz class="btn_main">
                            <div class="buy_bt">
                               <ul>
-                                 <li class="active"><a href="#">Buy Now</a></li>
-                                 <li><a href="#">Buy Now</a></li>
+                                 <li class="active"><a href="#">Check Details</a></li>
+                                 <li><a href="#">Book Now</a></li>
                               </ul>
                            </div>
-                           <h3 class="price_text">Price $30</h3>
-                        </div>
+                           
+                        </divz>
                      </div>
                   </div>
                   <div class="col-lg-3 col-sm-6">
                      <div class="product_box">
-                        <h4 class="bursh_text">Beauty Bursh</h4>
-                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                        <img src="{% static 'images/img-4.png' %}" class="image_1">
+                        <h4 class="bursh_text">Career Guidance</h4>
+                        <p class="lorem_text">Do you need help with your career choices? Come here and book a session with our consultant... </p>
+                        <img src="{% static 'images/mentor-program-4.jpg' %}" class="image_1">
                         <div class="btn_main">
                            <div class="buy_bt"> 
                               <ul>
-                                 <li class="active"><a href="#">Buy Now</a></li>
-                                 <li><a href="#">Buy Now</a></li>
+                                 <li class="active"><a href="#">Check Details</a></li>
+                                 <li><a href="#">Book Now</a></li>
                               </ul>
                            </div>
-                           <h3 class="price_text">Price $30</h3>
+                           
                         </div>
                      </div>
                   </div>
@@ -213,15 +230,15 @@
                      <div class="product_box">
                         <h4 class="bursh_text">Beauty Bursh</h4>
                         <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                        <img src="{% static 'images/img-5.png' %}" class="image_1">
+                        <img src="{% static 'images/mentor-program-5.jpg' %}" class="image_1">
                         <div class="btn_main"> 
                            <div class="buy_bt">
                               <ul>
-                                 <li class="active"><a href="#">Buy Now</a></li>
-                                 <li><a href="#">Buy Now</a></li>
+                                 <li class="active"><a href="#">Check Details</a></li>
+                                 <li><a href="#">Book Now</a></li>
                               </ul>
                            </div>
-                           <h3 class="price_text">Price $30</h3>
+                           
                         </div>
                      </div>
                   </div>
@@ -229,15 +246,15 @@
                      <div class="product_box">
                         <h4 class="bursh_text">Beauty Bursh</h4>
                         <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                        <img src="{% static 'images/img-6.png' %}" class="image_1">
+                        <img src="{% static 'images/mentor-program-6.jpg' %}" class="image_1">
                         <div class="btn_main">
                            <div class="buy_bt">
                               <ul>
-                                 <li class="active"><a href="#">Buy Now</a></li>
-                                 <li><a href="#">Buy Now</a></li>
+                                 <li class="active"><a href="#">Check Details</a></li>
+                                 <li><a href="#">Book Now</a></li>
                               </ul>
                            </div>
-                           <h3 class="price_text">Price $30</h3>
+                           
                         </div>
                      </div>
                   </div>
@@ -245,15 +262,15 @@
                      <div class="product_box">
                         <h4 class="bursh_text">Beauty Bursh</h4>
                         <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                        <img src="{% static 'images/img-7.png' %}" class="image_1">
+                        <img src="{% static 'images/mentor-program-7.jpg' %}" class="image_1">
                         <div class="btn_main">
                            <div class="buy_bt">
                               <ul>
-                                 <li class="active"><a href="#">Buy Now</a></li>
-                                 <li><a href="#">Buy Now</a></li>
+                                 <li class="active"><a href="#">Check Details</a></li>
+                                 <li><a href="#">Book Now</a></li>
                               </ul>
                            </div>
-                           <h3 class="price_text">Price $30</h3>
+                           
                         </div>
                      </div>
                   </div>
@@ -261,85 +278,20 @@
                      <div class="product_box">
                         <h4 class="bursh_text">Beauty Bursh</h4>
                         <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                        <img src="{% static 'images/img-8.png' %}" class="image_1">
+                        <img src="{% static 'images/mentor-program-8.jpg' %}" class="image_1">
                         <div class="btn_main">
                            <div class="buy_bt">
                               <ul>
-                                 <li class="active"><a href="#">Buy Now</a></li>
-                                 <li><a href="#">Buy Now</a></li>
+                                 <li class="active"><a href="#">Check Details</a></li>
+                                 <li><a href="#">Book Now</a></li>
                               </ul>
                            </div>
-                           <h3 class="price_text">Price $30</h3>
+                           
                         </div>
                      </div>
                   </div>
                </div>
-               <div class="row">
-                  <div class="col-lg-3 col-sm-6">
-                     <div class="product_box">
-                        <h4 class="bursh_text">Beauty Bursh</h4>
-                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                        <img src="{% static 'images/img-9.png' %}" class="image_1">
-                        <div class="btn_main">
-                           <div class="buy_bt">
-                              <ul>
-                                 <li class="active"><a href="#">Buy Now</a></li>
-                                 <li><a href="#">Buy Now</a></li>
-                              </ul>
-                           </div>
-                           <h3 class="price_text">Price $30</h3>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                     <div class="product_box">
-                        <h4 class="bursh_text">Beauty Bursh</h4>
-                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                        <img src="{% static 'images/img-10.png' %}" class="image_1">
-                        <div class="btn_main">
-                           <div class="buy_bt">
-                              <ul>
-                                 <li class="active"><a href="#">Buy Now</a></li>
-                                 <li><a href="#">Buy Now</a></li>
-                              </ul>
-                           </div>
-                           <h3 class="price_text">Price $30</h3>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                     <div class="product_box">
-                        <h4 class="bursh_text">Beauty Bursh</h4>
-                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                        <img src="{% static 'images/img-11.png' %}" class="image_1">
-                        <div class="btn_main">
-                           <div class="buy_bt">
-                              <ul>
-                                 <li class="active"><a href="#">Buy Now</a></li>
-                                 <li><a href="#">Buy Now</a></li>
-                              </ul>
-                           </div>
-                           <h3 class="price_text">Price $30</h3>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                     <div class="product_box">
-                        <h4 class="bursh_text">Beauty Bursh</h4>
-                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
-                        <img src="{% static 'images/img-12.png' %}" class="image_1">
-                        <div class="btn_main">
-                           <div class="buy_bt">
-                              <ul>
-                                 <li class="active"><a href="#">Buy Now</a></li>
-                                 <li><a href="#">Buy Now</a></li>
-                              </ul>
-                           </div>
-                           <h3 class="price_text">Price $30</h3>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+
                <div class="seemore_bt"><a href="#">See More</a></div>
             </div>
          </div>
@@ -352,8 +304,8 @@
                <div class="row">
                   <div class="col-md-6">
                      <div class="about_taital_main">
-                        <h1 class="about_taital">About Our beauty sotore</h1>
-                        <p class="about_text">labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        <h1 class="about_taital">About Us</h1>
+                        <p class="about_text">The Centre for Strategic Infocomm Technologies (CSIT) is a technical agency in the Ministry of Defence that harnesses cutting-edge digital technologies to meet Singapore’s security needs. CSIT is a member of the Defence Technology Community.</p>
                         <div class="readmore_bt"><a href="#">Read More</a></div>
                      </div>
                   </div>
@@ -425,29 +377,7 @@
          </div>
       </div>
       <!-- customer section end -->
-      <!-- contact section start -->
-      <div class="contact_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6">
-                  <h1 class="contact_taital">Get In Touch</h1>
-                  <p class="contact_text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  eu </p>
-               </div>
-               <div class="col-md-6">
-                  <div class="contact_main">
-                     <div class="contact_bt"><a href="#">Contact Form</a></div>
-                     <div class="newletter_bt"><a href="#">Newletter</a></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="map_main">
-            <div class="map-responsive">
-               <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-            </div>
-         </div>
-      </div>
-      <!-- contact section end -->
+
       <!-- footer section start -->
       <div class="footer_section layout_padding">
          <div class="container">    

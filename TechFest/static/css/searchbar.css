@@ -5,8 +5,14 @@
     max-width: 20%;
     display: table-cell;
 }
+.product_header{
+
+    padding-left: 20px;
+
+}
 .mid_container{
     margin: 0 auto;
+    display: table;
 }
 .search_container{
     padding-top: 100px;
