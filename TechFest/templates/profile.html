@@ -42,28 +42,31 @@
     <div class="resume">
         <div class="base">
           <div class="profile">
-            <div class="photo"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/764024/profile/profile-512.jpg"/></div>
+            <div class="photo"><img src="{% static 'images/professor.png' %}"/></div>
             <div class="info">
-              <h4 class="name">Kelly Chen</h4><small class="job">Front-end Web Designer</small>
+              <h4 class="name">David De Gea</h4><small class="job">Front-end Web Designer</small>
             </div>
           </div>
           <div class="contact">
             <div class="call"><i class="fa fa-home"></i><span><a href="http://127.0.0.1:8000">HomePage</a></span></div>
+            <div class="call"><i class="fa fa-tachometer"></i><span><a href="http://127.0.0.1:8000/dashboard">Dashboard</a></span></div>
           </div>
           <div class="about">
-            <h3>About me</h3>嗨！目前正努力學習中，希望自己的進步及成長能夠被看見，請多指教。<br/>喜歡塗鴉、動漫和美好的小事物，歡迎交流 v(´∀｀*v)
+            <h3>About me</h3>Hi, I am a Front-End Developer with over 25 years of experience in the field. I specialize in creating visually appealing and user-friendly websites and web applications, utilizing technologies such as HTML, CSS, JavaScript, and jQuery. 
           </div>
 
           <div class="contact">
             <h3>Contact</h3>
+            <div class="call"><i class="fa fa-comments-o"></i><span><a href="http://127.0.0.1:8000/dashboard">Chat</a></span></div>
             <div class="call"><i class="fa fa-phone"></i><span>9827 2838</span></div>
             <div class="address"><i class="fa fa-map-marker"></i><span>Central, Singapore</span></div>
             <div class="email"><i class="fa fa-envelope"></i><span>mentor@gmail.com</span></div>
+  
           </div>
           
           <div class="follow">
             <h3>Follow</h3>
-            <div class="box"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a><a href="javascript:void(0);"><i class="pif-plurkapp"></i></a><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a><a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a><a href="javascript:void(0);"><i class="fa fa-tumblr"></i></a><a href="https://codepen.io/xichen/" target="_blank"><i class="fa fa-codepen"></i></a></div>
+            <div class="box"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a><a href="javascript:void(0);"><i class="fa fa-tumblr"></i></a><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a><a href="javascript:void(0);"><i class="fa fa-pinterest"></i></a></div>
           </div>
         </div>
         <div class="func">
@@ -76,7 +79,7 @@
             </ul>
           </div>
           <div class="edu">
-            <h3><i class="fa fa-graduation-cap"></i>Education</h3>
+            <h3><i class="fa fa-book"></i>Education</h3>
             <ul>
               <li><span>Department of Information Management</span><small>Set 2010 - Jun 2014</small></li>
               <li><span>Department of Data Processing</span><small>Set 2007 - Jun 2010</small></li>
@@ -154,7 +157,7 @@
           <div class="interests">
             <h3><i class="fa fa-star"></i>Interests</h3>
             <div class="interests-items">
-              <div class="draw"><i class="fa fa-paint-brush"></i><span>Draw</span></div>
+              <div class="draw"><i class="fa fa-cutlery"></i><span>Food</span></div>
               <div class="guitar"><i class="guitar">
                   <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 53.858 53.858">
                     <path d="M6.901,37.275l9.621,9.62l4.185-4.184l-9.622-9.624L6.901,37.275z M11.085,36.64l6.019,6.019l-0.593,0.618l-6.059-6.003L11.085,36.64z"></path>
@@ -171,7 +174,9 @@
       </div>
       
       
-      <script src="{% static 'js/script.js' %}" type="text/javascript"></script>  
+      
+      <script type="text/coffeescript" src="{% static 'js/script.md' %}"></script>
+
 
    </body>
 </html>
